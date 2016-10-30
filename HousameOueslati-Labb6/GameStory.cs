@@ -11,13 +11,13 @@ namespace HousameOueslati_Labb6
     class GameStory
     {
         public enum Prize {Money=1, Army, Land, Nothing };
-        public static Prize prize = new Prize();
+        public static Prize prize = new Prize(); // priset som kungen erbjudit
         static int steps;
         public static int Steps
         {
             get { return steps; }
             set { steps = value; }
-        }
+        } // för att följa planen som fåtts av mentor
 
         static Conversation Con = new Conversation();
 
@@ -109,7 +109,7 @@ namespace HousameOueslati_Labb6
             }
         }
 
-        private static void TheStablePlace()//to the castle
+        private static void TheStablePlace()
         {
             Console.Clear();
             Con.horse.PlaceArround();
@@ -231,8 +231,10 @@ namespace HousameOueslati_Labb6
             
         }
     }
-    class Conversation
+    class Conversation  // converstaioner mellan figurer
     {
+        
+
         #region Class variables
 
         public Horse horse = new Horse();
@@ -245,6 +247,7 @@ namespace HousameOueslati_Labb6
         public Barman barman = new Barman();
         public Mentor mentor = new Mentor();
         #endregion
+       
 
         public void BarmanConv1()
         {

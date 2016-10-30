@@ -9,6 +9,7 @@ namespace HousameOueslati_Labb6
 {
     class GUI
     {
+        #region   Grafics
         public static void Map()
         {
             Console.WriteLine("                 The Map                 ");
@@ -877,5 +878,6 @@ namespace HousameOueslati_Labb6
             Console.WriteLine(@"                                                              ");
             Console.ResetColor();
         }
+        #endregion
     }
 }

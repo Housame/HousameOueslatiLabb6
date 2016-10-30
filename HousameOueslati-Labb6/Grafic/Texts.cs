@@ -8,6 +8,7 @@ namespace HousameOueslati_Labb6.Grafic
 {
     class Texts
     {
+        #region Texts
         public static void BeginText()
         {
             Console.Clear();
@@ -184,5 +185,6 @@ namespace HousameOueslati_Labb6.Grafic
             Console.WriteLine("******************************");
 
         }
+        #endregion //Bara texter inga hanteringar
     }
 }
