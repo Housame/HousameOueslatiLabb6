@@ -48,7 +48,9 @@ namespace HousameOueslati_Labb6.Grafic
             "You:  -I'll come back with your daughter",
             "Princess  -Thank you! You are my hero!!",
             "You:  -It was my duty, Its a honor for me",
-            
+            "You:  - We will see about it!",
+            "Dragon:  -Now you are in front of dragon!!!"
+
 
         };
     }

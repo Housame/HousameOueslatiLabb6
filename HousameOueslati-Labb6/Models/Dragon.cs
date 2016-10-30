@@ -23,6 +23,8 @@ namespace HousameOueslati_Labb6.Models
         public void Speak(string s)
         {
             Console.WriteLine(s);
+            Client.Timer(2.5);
+            GUI.Dragon();
         }
     }
 }

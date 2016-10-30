@@ -32,6 +32,7 @@ namespace HousameOueslati_Labb6
 
         internal static void RideDragon()
         {
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine(@"                                 _                           ");
             Console.WriteLine(@"                              ==(W{==========-      /===-                ");
             Console.WriteLine(@"                                ||  (.--.)         /===-_---~~~~~~~----__");
@@ -63,10 +64,12 @@ namespace HousameOueslati_Labb6
             Console.WriteLine(@"    ' ') '( (/                                                              ");
             Console.WriteLine(@"        }                                                                   ");
             Console.WriteLine(@"                                                                ");
+            Console.ResetColor();
         }
 
         internal static void HappyEnd()
         {
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine(@"                                                     ,.=,,==. ,,_");
             Console.WriteLine(@"                                    _ ,====, _    |I|`` ||  `|I `|           ");
             Console.WriteLine(@"                _|\_,              |`I|    || `==,|``   ^^   ``  |           ");
@@ -90,8 +93,10 @@ namespace HousameOueslati_Labb6
             Console.WriteLine(@"                  / \/88%  88%  8888%88% &,       \,     `\      /     &,,   ");
             Console.WriteLine(@"                  |,M8,  , `8%   ,,8% `8, `         , \,        &\     ,&##  ");
             Console.WriteLine(@"                 /8888%  888`    ```    `            `  `               ```  ");
-            Client.Timer(4);
+            Console.ReadKey();
+            Console.ResetColor();
             Console.Clear();
+            Console.ForegroundColor = ConsoleColor.Magenta;
             Console.WriteLine(@"                               ,/     _,---._         ");
             Console.WriteLine(@"                    ,       _,'/|  ,-'       `.                   ");
             Console.WriteLine(@"                     \.__,-' // `./   ____     \                  ");
@@ -113,11 +118,14 @@ namespace HousameOueslati_Labb6
             Console.WriteLine(@"          // ||_          //'|/\__,'\|(/'|/ \___,'`,)             ");
             Console.WriteLine(@"          `-  ~~          `  `           `                        ");
             Console.ReadKey();
+            Environment.Exit(0);
+            
         }
 
         internal static void DragonSurrended()
         {
             Console.Clear();
+            Console.ForegroundColor = ConsoleColor.DarkRed;
             Console.WriteLine(@"                                                       ____________");
             Console.WriteLine(@"                                 (`-..________....-- - ''  ____..._.-`         ");
             Console.WriteLine(@"                                  \\`._______.._,.-- - '''     ,'              ");
@@ -134,10 +142,12 @@ namespace HousameOueslati_Labb6
             Console.WriteLine(@"           `.\`.\  `_.-..' ,'   _,-..'  /..,-''(, ,'; (_______`___..'__        ");
             Console.WriteLine(@"                 ((, (, __(((, (, __, '  ``'-- `'`.(\  `.,..______   SSt       ");
             Console.WriteLine(@"                                                      ``--------..._``--.__    ");
+            Console.ResetColor();
         }
 
         internal static void Mentor()
         {
+            Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine(@"                          ");
             Console.WriteLine(@"               .--.         ");
             Console.WriteLine(@"               , , )        ");
@@ -157,31 +167,39 @@ namespace HousameOueslati_Labb6
             Console.WriteLine(@"       |     |  :     |     ");
             Console.WriteLine(@"       |     | __ / _____\  ");
             Console.WriteLine(@"      .,,.  oo = '  oo='    ");
+            Console.ResetColor();
         }
 
         internal static void Stable()
         {
+            Console.ForegroundColor = ConsoleColor.DarkGreen;
             Console.WriteLine(@"   _____,,;;;`;       ;';;;,,_____");
             Console.WriteLine(@",~(  )  , )~~\|       |/~~( ,  (  )~;         ");
             Console.WriteLine(@"' / / --`--,             .--'-- \ \ `         ");
             Console.WriteLine(@" /  \    | '             ` |    /  \          ");
             Console.WriteLine(@"                                              ");
+            Console.ResetColor();
+            Console.ForegroundColor = ConsoleColor.DarkGray;
             Console.WriteLine(@"        ,--,                                  ");
             Console.WriteLine(@"  _ ___/ /\|                                  ");
             Console.WriteLine(@" ;( )__, )                                    ");
             Console.WriteLine(@"; //   '--;                                   ");
             Console.WriteLine(@"  \     |                                     ");
             Console.WriteLine(@"   ^    ^                                     ");
+            Console.ResetColor();
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
             Console.WriteLine(@"                                              ");
             Console.WriteLine(@"       _ ____                                 ");
             Console.WriteLine(@"     /( ) _   \                               ");
             Console.WriteLine(@"    / //   /\` \,  ||--||--||-                ");
             Console.WriteLine(@"      \|   |/  \|  ||--||--||-                ");
             Console.WriteLine(@"~^~^~^~~^~~~^~~^^~^^^^^^^^^^^^");
+            Console.ResetColor();
         }
 
         internal static void Horse()
         {
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine(@". . . .      ");
             Console.WriteLine(@"                      ,`,`,`,`,               ");
             Console.WriteLine(@". . . .               `\`\`\`\;               ");
@@ -209,9 +227,11 @@ namespace HousameOueslati_Labb6
             Console.WriteLine(@"        /_!/            >_\                   ");
             Console.WriteLine(@"        }                                     ");
             Console.WriteLine(@"                                      ");
+            Console.ResetColor();
         }
         internal static void TheBar()
         {
+            Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("          The Bar    ");
             Console.WriteLine(@"         ,~,       ");
             Console.WriteLine(@"         )))Y                  ");
@@ -220,11 +240,13 @@ namespace HousameOueslati_Labb6
             Console.WriteLine(@"        (   \  |  [_]   [_]    ");
             Console.WriteLine(@"         )___\ |   |     |     ");
             Console.WriteLine(@"         (| (\ |   |     |     ");
-            Console.WriteLine(@"  ejm    q`_ q`_  _|_   _|_    ");
+            Console.WriteLine(@"  BAR    q`_ q`_  _|_   _|_    ");
+            Console.ResetColor();
         }
 
         internal static void Barman()
         {
+            Console.ForegroundColor = ConsoleColor.DarkGreen;
             Console.WriteLine("              The BarMan");
             Console.WriteLine(@"            .sS$$$$$$$$$$$$$$Ss.");
             Console.WriteLine(@"          .$$$$$$$$$$$$$$$$$$$$$$s.       ");
@@ -254,10 +276,12 @@ namespace HousameOueslati_Labb6
             Console.WriteLine(@"            :.S$$$S.   .'    .'           ");
             Console.WriteLine(@"            : $$$$$$`.'    .'             ");
             Console.WriteLine(@"               $$$$   `. .'               ");
+            Console.ResetColor();
         }
 
         internal static void Sword()
         {
+            Console.ForegroundColor = ConsoleColor.DarkRed;
             Console.WriteLine(@"                     /   ))     |\         )               ).     ");
             Console.WriteLine(@"               c--. (\  ( `.    / )  (\   ( `.     ).     ( (                 ");
             Console.WriteLine(@"               | |   ))  ) )   ( (   `.`.  ) )    ( (      ) )                ");
@@ -270,11 +294,12 @@ namespace HousameOueslati_Labb6
             Console.WriteLine(@"               | |         ``----''            ``----''                       ");
             Console.WriteLine(@"               | |                                                            ");
             Console.WriteLine(@"               c--`                                                           ");
+            Console.ResetColor();
         }
 
         internal static void OutOfBar()
         {
-            
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine(@"                                           |           /   ");
             Console.WriteLine(@"                                           |          /    ");
             Console.WriteLine(@"  .-------.            _.----._           /|   gluk  /     ");
@@ -355,35 +380,42 @@ namespace HousameOueslati_Labb6
             Console.WriteLine(@"                                                                    ");
             Client.Timer(3);
             Console.Clear();
+            Console.ResetColor();
         }
 
         internal static void BlackSmithPlace()
         {
             Console.WriteLine("                   The Blacksmith Place");
+            Console.ForegroundColor = ConsoleColor.Blue;
             Console.WriteLine(@"       |______________                                         ");
             Console.WriteLine(@"[======|______________ >                                                  ");
             Console.WriteLine(@"       |                                                                   ");
             Console.WriteLine(@"       '                                                                   ");
             Console.WriteLine(@"                                                                           ");
+            Console.ForegroundColor = ConsoleColor.DarkGreen;
             Console.WriteLine(@"      /| ________________                                                  ");
             Console.WriteLine(@"O |===|*>________________ >                                             ");
             Console.WriteLine(@"      \|                                                                   ");
             Console.WriteLine(@"                                                                           ");
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
             Console.WriteLine(@"           /\                                                 /\           ");
             Console.WriteLine(@" _         )(______________________   ______________________)(_            ");
             Console.WriteLine(@"(_)///////(**)______________________> <______________________(**)\\\\\\\(_)");
             Console.WriteLine(@"           )()(                                                            ");
             Console.WriteLine(@"           \/                                                 \/           ");
             Console.WriteLine(@"                                                                           ");
+            Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine(@"         /> _________________________________                              ");
             Console.WriteLine(@"[########[]__________________________________>                              ");
             Console.WriteLine(@"         \>                                                                ");
             Console.WriteLine(@"                                                                           ");
             Console.WriteLine(@"                                                                           ");
+            Console.ResetColor();
         }
 
         internal static void DragonPlace()
         {
+            Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine(@"                  _________________          ");
             Console.WriteLine(@"             ____/#################\____                 ");
             Console.WriteLine(@"         ___/################,##########\___             ");
@@ -411,10 +443,12 @@ namespace HousameOueslati_Labb6
             Console.WriteLine(@"            \   /                                        ");
             Console.WriteLine(@"             \ /                                         ");
             Console.WriteLine(@"              V                                          ");
+            Console.ResetColor();
         }
 
         internal static void Mountain()
         {
+            Console.ForegroundColor = ConsoleColor.DarkGreen;
             Console.WriteLine(@" * *******************************************************************************");
             Console.WriteLine(@"*                    /   \              /'\       _                              *");
             Console.WriteLine(@"*\_..           /'.,/     \_         .,'   \     / \_                            *");
@@ -437,31 +471,37 @@ namespace HousameOueslati_Labb6
             Console.WriteLine(@"*                                                   |      \     \     \      \  *");
             Console.WriteLine(@"*                                                    \            |            \ *");
             Console.WriteLine(@" * *******************************************************************************");
+            Console.ResetColor();
         }
 
         internal static void WizardPlace()
         {
+            Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine(@" __   __       ___   ___      ___   ___");
             Console.WriteLine(@"(  \,/  )     ( @ \Y/ @ )    ((o)\,/(o))           ");
             Console.WriteLine(@" \_ | _/       \__+|+__/      \__ | __/            ");
             Console.WriteLine(@" (_/ \_)        {_/ \_}        {_/'\_}             ");
             Console.WriteLine(@"                                                   ");
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine(@"                                                   ");
             Console.WriteLine(@" ___   ___     ___   ___       __   __             ");
             Console.WriteLine(@"( @ \v/ m )   { ~ \,/ ~ }     (()\,/  )            ");
             Console.WriteLine(@" \__+|+__/     \_~_|_~_/       \_ | _/             ");
             Console.WriteLine(@"  {_/ \_}       (_/'\_)        { /'\*}             ");
             Console.WriteLine(@"                                                   ");
+            Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine(@"                                                   ");
             Console.WriteLine(@" __ Y __        __   __       ___   ___            ");
             Console.WriteLine(@"(()\o/())     ( s \Y/ s )    ( q \,/ p )           ");
             Console.WriteLine(@" \_ I _/       \_<>|<>_/      \_ 6|9 _/            ");
             Console.WriteLine(@"  (/I\)         (_/'\_)        {_/ \_}               ");
+            Console.ResetColor();
         }
 
         internal static void King()
         {
             Console.WriteLine(@".        ");
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine(@"                            / \                   ");
             Console.WriteLine(@"                           _\ /_                  ");
             Console.WriteLine(@"                 .     .  (,'v`.)  .     .        ");
@@ -470,6 +510,7 @@ namespace HousameOueslati_Labb6
             Console.WriteLine(@"                   : '    _______    ' :          ");
             Console.WriteLine(@"                   |  _,-'  ,-.  `-._  |          ");
             Console.WriteLine(@"                   |,' ( )__`-'__( ) `.|          ");
+            Console.ForegroundColor = ConsoleColor.DarkRed;
             Console.WriteLine(@"                   (|,-,'-._   _.-`.-.|)          ");
             Console.WriteLine(@"                   /  /<( o)> <( o)>\  \          ");
             Console.WriteLine(@"                   :  :     | |     :  :          ");
@@ -482,10 +523,12 @@ namespace HousameOueslati_Labb6
             Console.WriteLine(@"                  `.  ;`._________,':  ,'         ");
             Console.WriteLine(@"                 ,' `/               \'`.         ");
             Console.WriteLine(@"                      `------.------'         King");
+            Console.ResetColor();
         }
 
         internal static void Princess()
         {
+            Console.ForegroundColor = ConsoleColor.Magenta;
             Console.WriteLine(@"       _                           _");
             Console.WriteLine(@"      / `._        \+O+/        _.' \           ");
             Console.WriteLine(@"     ( @ : `.      //`\\      .' : @ )          ");
@@ -506,11 +549,14 @@ namespace HousameOueslati_Labb6
             Console.WriteLine(@" Princess /                     \               ");
             Console.WriteLine(@"         /                       \              ");
             Console.WriteLine(@"         `----....._____.....----'              ");
+            Console.ResetColor();
         }
 
         public static void HouseSpace()
         {
+
             Console.Clear();
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("========================================================");
             Console.WriteLine(@"|      #                                               |");
             Console.WriteLine(@"|     'O'                                   __]        |");
@@ -527,11 +573,14 @@ namespace HousameOueslati_Labb6
             Console.WriteLine(@"|  | O  o| Cook                        a cat           |");
             Console.WriteLine(@"|  | o  O| Food                       _==>             |");
             Console.WriteLine("========================================================");
+            Console.ResetColor();
         }
 
         public static void Sleeping()
         {
+
             Console.Clear();
+            Console.ForegroundColor = ConsoleColor.DarkGreen;
             Console.WriteLine("========================================================");
             Console.WriteLine(@"|                                                      |");
             Console.WriteLine(@"|                                           __]        |");
@@ -548,6 +597,7 @@ namespace HousameOueslati_Labb6
             Console.WriteLine(@"|  | O  o| Cook                        a cat           |");
             Console.WriteLine(@"|  | o  O| Food                       _==>             |");
             Console.WriteLine("========================================================");
+            Console.ResetColor();
             Texts.Lazy();
 
         }
@@ -555,6 +605,7 @@ namespace HousameOueslati_Labb6
         public static void Drinking()
         {
             Console.Clear();
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
             Console.WriteLine(@".===================================================================.");
             Console.WriteLine(@"||                                                                 ||  ");
             Console.WriteLine(@"|| -=]                                                             ||  ");
@@ -581,12 +632,13 @@ namespace HousameOueslati_Labb6
             Console.WriteLine(@"|| BAR / _____                                                     || ");
             Console.WriteLine(@"||                                                                 || ");
             Console.WriteLine(@"'===================================================================' ");
+            Console.ResetColor();
 
         }
 
         public static void Castle()
         {
-
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
             Console.WriteLine(@"   ___                                                    ___                       ");
             Console.WriteLine(@"                      T)))                       __,___,_                    T)))               ");
             Console.WriteLine(@"                      |                          TT  )   )                   |                  ");
@@ -611,10 +663,12 @@ namespace HousameOueslati_Labb6
             Console.WriteLine(@"      L_J./   \.L_J./   \.L_J./   \.L_JI  I[]./      \.[]I  IL_J./   \.L_J./   \.L_J./   \.L_J  ");
             Console.WriteLine(@"      L_J|     |L_J|     |L_J|     |L_J|  |[]|        |[]|  |L_J|     |L_J|     |L_J|     |L_J  ");
             Console.WriteLine(@"      L_J |_____|L_J|_____|L_J|_____|L_J|__|[]|        |[]|__|L_J|_____|L_J|_____|L_J|_____|L_J ");
+            Console.ResetColor();
         }
 
         public static void Dragon()
         {
+            Console.ForegroundColor = ConsoleColor.DarkMagenta;
             Console.WriteLine(@"                          ,     \    /      ,        ");
             Console.WriteLine(@"                         / \    )\__/(     / \                   ");
             Console.WriteLine(@"                        /   \  (_\  /_)   /   \                  ");
@@ -630,10 +684,12 @@ namespace HousameOueslati_Labb6
             Console.WriteLine(@"                   |  /   V        ))       V   \  |             ");
             Console.WriteLine(@"                   |/     `       //        '     \|             ");
             Console.WriteLine(@"                   `              V                '  ");
+            Console.ResetColor();
         }
 
         public static void Knight()
         {
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
             Console.WriteLine(@"        I'm the dragon slayer         ");
             Console.WriteLine(@"                                    /)");
             Console.WriteLine(@"                                   // ");
@@ -658,11 +714,14 @@ namespace HousameOueslati_Labb6
             Console.WriteLine(@"          '(          )'              ");
             Console.WriteLine(@"         /+|          |+\             ");
             Console.WriteLine(@" |,/          \,/  Knight              ");
+            Console.ResetColor();
 
         }
 
         public static void Wizard()
         {
+
+            Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine(@"          .--.   _,  ");
             Console.WriteLine(@"      .--;    \ /(_              ");
             Console.WriteLine(@"     /    '.   |   '-._    . ' . ");
@@ -670,25 +729,30 @@ namespace HousameOueslati_Labb6
             Console.WriteLine(@"     \ /\_   '. \((` .(    '/. ' ");
             Console.WriteLine(@"      )\ /     \ )\  _/   _/     ");
             Console.WriteLine(@"     /  \\    .-'   '--. /_\     ");
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine(@"    |    \\_.' ,        \/||     ");
             Console.WriteLine(@"    \     \_.-';,_) _)'\ \||     ");
             Console.WriteLine(@"     '.       /`\   (   '._/     ");
             Console.WriteLine(@"       `\   .;  |  . '.          ");
             Console.WriteLine(@"         ).'  )/|      \         ");
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine(@"         `    ` |  \|   |        ");
             Console.WriteLine(@"                 \  |   |        ");
             Console.WriteLine(@"                  '.|   |        ");
             Console.WriteLine(@"                     \  '\__     ");
             Console.WriteLine(@"                      `-._  '. _ ");
+            Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine(@"                         \`;-.` `._ ");
             Console.WriteLine(@"                          \ \ `'-._\");
             Console.WriteLine(@"                           \ |   ");
             Console.WriteLine(@"                            \ )  ");
             Console.WriteLine(@"                             \_\ ");
+            Console.ResetColor();
         }
 
         public static void KnightFighting()
         {
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine(@"                                               ");
             Console.WriteLine(@"                                                 .         ");
             Console.WriteLine(@"                                                 |\        ");
@@ -717,11 +781,13 @@ namespace HousameOueslati_Labb6
             Console.WriteLine(@"                         _ /,/ _ / _ /,/                   ");
             Console.WriteLine(@"                   _____ / (______, ____ / _ / (______     ");
             Console.WriteLine(@"                        ^ -'             ^-'");
+            Console.ResetColor();
 
         }
 
         public static void HorseFight()
         {
+            Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine(@"                             .  4                  ");
             Console.WriteLine(@"                           .$e$P *  .z          $      e.      ");
             Console.WriteLine(@"                    4.e$e$$$$$$$$$$''         $$.z$$$$*** $    ");
@@ -761,10 +827,12 @@ namespace HousameOueslati_Labb6
             Console.WriteLine(@"                                    4$$                        ");
             Console.WriteLine(@"                                  .d$$..                       ");
             Console.WriteLine(@"                                 .$$$E'                       ");
+            Console.ResetColor();
         }
 
         public static void DragonFight()
         {
+            Console.ForegroundColor = ConsoleColor.DarkRed;
             Console.WriteLine(@"                                                  ");
             Console.WriteLine(@"                       /                            )         ");
             Console.WriteLine(@"                      (                             |\        ");
@@ -807,6 +875,7 @@ namespace HousameOueslati_Labb6
             Console.WriteLine(@"                                            \  \  /           ");
             Console.WriteLine(@"                                             '.__)            ");
             Console.WriteLine(@"                                                              ");
+            Console.ResetColor();
         }
     }
 }

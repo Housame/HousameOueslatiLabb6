@@ -21,7 +21,9 @@ namespace HousameOueslati_Labb6
             Console.Clear();
             Con.dragon.PlaceArround();
             Client.Timer(2);
-            Console.WriteLine("Now you are in front of dragon!!!");
+            Con.DragonConv();
+            Console.WriteLine("Fight!!! Press anywhere!");
+            Console.ReadKey();
             Fight();
             DragonSurrend();
         }
@@ -57,9 +59,11 @@ namespace HousameOueslati_Labb6
         {
             Console.Clear();
             Con.princess.PlaceArround();
-            Client.Timer(1.5);
+            Client.Timer(2);
             Console.Clear();
             Con.princess.LookLike();
+            Client.Timer(3);
+            Console.Clear();
             Con.PrincessConv();
             if (dragonIsKilled == false && GameStory.prize == (GameStory.Prize)4)
                 HappyEnding();
@@ -71,6 +75,7 @@ namespace HousameOueslati_Labb6
         {
             Console.Clear();
             Console.WriteLine("******************************************");
+            Console.WriteLine("*               The End!!                *");
             Console.WriteLine("* The princess is in love with you       *");
             Console.WriteLine("*         You married her                *");
             Console.WriteLine("* The dragon is now the castle protector *");
@@ -78,6 +83,7 @@ namespace HousameOueslati_Labb6
             Console.WriteLine("******************************************");
 
             GUI.HappyEnd();
+
         }
         
         static void Fight()

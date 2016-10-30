@@ -113,8 +113,10 @@ namespace HousameOueslati_Labb6
         {
             Console.Clear();
             Con.horse.PlaceArround();
+            Client.Timer(3);
             if (Steps == 4)
             {
+                Console.Clear();
                 Con.horse.LookLike();
                 Client.Timer(2);
                 Steps ++;
@@ -170,9 +172,10 @@ namespace HousameOueslati_Labb6
         {
             Console.Clear();
             Con.wizard.PlaceArround();
-            Client.Timer(1.5);
+            Client.Timer(3.5);
             Console.Clear();
             Con.wizard.LookLike();
+            Client.Timer(3);
             if (Steps == 3)
             {
                 Con.WizardConv();
@@ -420,6 +423,19 @@ namespace HousameOueslati_Labb6
             Client.Timer(1.5);
             knight.Speak(Dialog.dialog[37]);
             Client.Timer(1.5);
+        }
+
+        internal void DragonConv()
+        {
+            
+            Console.Clear();
+            Console.WriteLine("**********************");
+            Console.WriteLine("**You and the Dragon**");
+            Console.WriteLine("**********************");
+            dragon.Speak(Dialog.dialog[39]);
+            Client.Timer(3);
+            knight.LookLike();
+            knight.Speak(Dialog.dialog[38]);
         }
     }
 }

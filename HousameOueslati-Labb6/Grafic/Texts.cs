@@ -35,6 +35,8 @@ namespace HousameOueslati_Labb6.Grafic
         internal static void KillDragon()
         {
             Console.WriteLine("*********************************");
+            Console.WriteLine("*     The dragon surrended      *");
+            Console.WriteLine("*                               *");
             Console.WriteLine("* 1. Kill the dragon            *");
             Console.WriteLine("*                               *");
             Console.WriteLine("* 2. Arrest it and make him your*");
@@ -61,7 +63,9 @@ namespace HousameOueslati_Labb6.Grafic
             Console.WriteLine("*    You've got you prize    *");
             Console.WriteLine("*          {0}               *",GameStory.prize);
             Console.WriteLine("*                            *");
+            Console.WriteLine("*      It could be better    *");
             Console.WriteLine("******************************");
+            Console.ReadKey();
 
         }
 
